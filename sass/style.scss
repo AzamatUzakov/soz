@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+
+
+.shop {
+    .container {
+        padding: 76px 104px;
+        width: 1728px;
+        margin: 0 auto;
+
+        .card_info {
+            .card_text {
+                h1 {
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 59px;
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .card_button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                button {
+                    width: 254px;
+                    height: 55px;
+                    background: #FFFFFF;
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+                    margin-bottom: 65px;
+                }
+
+            }
+        }
+
+        .shop_card {
+            display: grid;
+            grid-template-columns: repeat(4, 364px);
+            gap: 21px;
+
+            .shop_item {
+                width: 366px;
+                max-height: 476px;
+                background: #000;
+
+                .item_img {
+                    height: 201px;
+                    background: #FFFFFF;
+                    border: 1px solid #000000;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .item_text {
+                    padding: 30px 30px 0px 30px;
+
+                    h2 {
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #FFFFFF;
+                        margin-bottom: 11px;
+                    }
+
+                    p {
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        margin-bottom: 16px;
+                        color: rgba(255, 255, 255, 0.56);
+                    }
+                }
+
+                .item_info {
+                    display: flex;
+                    padding: 0 30px;
+                    gap: 23px;
+
+                    .info_elem {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        img {
+                            width: 12px;
+                            height: 13.39px;
+                        }
+
+                        span {
+                            font-family: 'Gilroy';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 29px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .item_button {
+                    padding: 30px 30px 24px 30px;
+
+                    .active_btn {
+                        background: #1F86FF;
+                        color: #FFFFFF;
+                    }
+
+                    button {
+                        width: 305px;
+                        height: 55px;
+                        background: #FFFFFF;
+                        border: 1px solid #000000;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.modal_bg {
+
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    display: none;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(200, 195, 195, 0.461);
+    backdrop-filter: blur(10px);
+    transition: 0.7s ease;
+    opacity: 0;
+    padding: 100px 50px;
+    animation-duration: 0.7s;
+    animation-name: modal;
+
+
+}
+
+@keyframes modal {
+    from {
+        right: -600px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.close {
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    cursor: pointer;
+
+}
+
+
+.flex_basktet {
+    display: flex;
+    gap: 30px;
+}
+
+.block_basket {
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+    padding: 40px;
+    overflow: scroll;
+
+
+    .menu{
+        width: 800px;
+        height: 180px;
+        border: 1px solid black;
+        margin-top: 18px;
+        padding: 10px;
+        .img_flex{
+            display: flex;
+            gap: 20px;
+        }
+        .shetchik{
+            width: 200px;
+            height: 70px;
+            border: 1px solid green;
+        }
+    }
+}
+
+.right_block_basket {
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+    padding: 40px;
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    hr {
+        margin-bottom: 12px;
+
+    }
+h2{
+    margin-top: 30px;
+    font-size: 18px;
+}
+h4{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.tax_f{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.tax{
+    display: flex;
+    justify-content: space-between;
+
+    h3{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+}
+
+.end{
+    width: 400px;
+    height: 70px;
+    background-color: #1F86FF;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 0;
+    border-radius:10px ;
+    margin-top: 100px;
+}
+.shetchik{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
